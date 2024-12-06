@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    android:padding="16dp">
+
+    <!-- Top Bar with Back Button and Title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_backarrow"
+            android:contentDescription="Back Button" />
+
+        <TextView
+            android:id="@+id/tvAddFormTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add New Intervention"
+            android:fontFamily="@font/dm_sans_medium"
+            android:layout_marginLeft="15dp"
+            android:textSize="21sp"
+            android:textColor="@android:color/white"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <!-- Form Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Text Input Field for Title -->
+            <EditText
+                android:id="@+id/etTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Title"
+                android:padding="12dp"
+                android:background="@drawable/card_background"
+                android:fontFamily="@font/dm_sans_medium"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="text" />
+
+            <!-- Text Input Field for Description -->
+            <EditText
+                android:id="@+id/etDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Description"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/card_background"
+                android:fontFamily="@font/dm_sans_medium"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:inputType="textMultiLine"
+                android:minLines="3" />
+
+            <!-- Date Picker Button -->
+            <Button
+                android:id="@+id/btnPickDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Select Date"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/card_background"
+                android:textColor="@color/white"
+                android:fontFamily="@font/dm_sans_medium"
+                android:textSize="16sp" />
+
+            <!-- Submit Button -->
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/card_background"
+                android:textColor="@color/white"
+                android:padding="12dp"
+                android:fontFamily="@font/dm_sans_medium"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

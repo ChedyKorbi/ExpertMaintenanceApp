@@ -1,0 +1,83 @@
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardBackgroundColor="@color/background"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="8dp"
+    android:clickable="true"
+    android:focusable="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@drawable/card_background">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/itemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="Intervention Title"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="21sp"
+            android:textStyle="bold" />
+
+        <!-- Client Name -->
+        <TextView
+            android:id="@+id/itemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemTitle"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="Client Name"
+            android:textSize="16sp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <!-- Address -->
+        <TextView
+            android:id="@+id/itemAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemName"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:text="Client Address"
+            android:textSize="14sp"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <!-- Time Range -->
+        <TextView
+            android:id="@+id/itemTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemAddress"
+            android:layout_marginTop="4dp"
+            android:text="Start - End Time"
+            android:textSize="14sp"
+            android:fontFamily="@font/dm_sans_medium"
+            android:textColor="@color/gray" />
+
+        <!-- Completion Checkbox -->
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemTime"
+            android:text="Completed"
+            android:fontFamily="@font/dm_sans_medium"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:textColor="@color/colorPrimaryDark" />
+
+        <!-- Details Button -->
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

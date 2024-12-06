@@ -1,0 +1,22 @@
+# Empêcher l'accès direct aux fichiers de configuration
+<Files "config.php">
+    Order Allow,Deny
+    Deny from all
+</Files>
+
+# Empêcher l'accès direct au dossier uploads
+<Directory "uploads">
+    Order Deny,Allow
+    Deny from all
+</Directory>
+
+# Réécriture des URLs pour rendre les endpoints plus propres
+RewriteEngine On
+
+# Règle pour les fichiers existants
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^(.+)$ $1 [L]
+
+# Règle pour les endpoints de l'API
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^controllers/([a-zA-Z0-9_-]+)$ controllers/$1.php [QSA,L]

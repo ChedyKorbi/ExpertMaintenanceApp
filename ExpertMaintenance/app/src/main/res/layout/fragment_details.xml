@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <!-- Planifié and Effectué Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <!-- Planifié -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:layout_margin="5dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/prevu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2196F3"
+                    android:gravity="center_horizontal"
+                    android:text="Planifié"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txtDatePlanifie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:fontFamily="@font/dm_sans_medium" />
+
+                <TextView
+                    android:id="@+id/txtHeurePlanifie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Heure"
+                    android:fontFamily="@font/dm_sans_medium" />
+
+                <TextView
+                    android:id="@+id/txtTempsTravailler"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Temps Travaillé"
+                    android:fontFamily="@font/dm_sans_medium" />
+
+                <TextView
+                    android:id="@+id/txtActionPlanifie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Action"
+                    android:fontFamily="@font/dm_sans_medium" />
+
+                <TextView
+                    android:id="@+id/txtCommentairePlanifie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Commentaire"
+                    android:fontFamily="@font/dm_sans_medium" />
+            </LinearLayout>
+
+            <!-- Effectué -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:background="@drawable/card_background"
+                android:layout_margin="5dp"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/donetasks"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#2196F3"
+                    android:gravity="center_horizontal"
+                    android:text="Effectué"
+                    android:fontFamily="@font/dm_sans_medium"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:padding="10dp" />
+
+                <TextView
+                    android:id="@+id/txtTermineEffectue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Terminé"
+                    android:fontFamily="@font/dm_sans_medium" />
+
+                <TextView
+                    android:id="@+id/txtDateEffectue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Date"
+                    android:fontFamily="@font/dm_sans_medium" />
+
+                <TextView
+                    android:id="@+id/txtHeureEffectue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Heure"
+                    android:fontFamily="@font/dm_sans_medium" />
+
+                <TextView
+                    android:id="@+id/txtActionEffectue"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Action"
+                    android:fontFamily="@font/dm_sans_medium" />
+
+                <TextView
+                    android:id="@+id/txtCommentaireEffectuer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Commentaire"
+                    android:fontFamily="@font/dm_sans_medium" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- Client Information Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:layout_margin="5dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tvclient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:gravity="center_horizontal"
+                android:text="Client"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="15dp"
+                android:padding="5dp"
+                android:fontFamily="@font/dm_sans_medium" />
+
+            <TextView
+                android:id="@+id/txtNomComplaitClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nom Complet"
+                android:fontFamily="@font/dm_sans_medium" />
+
+            <TextView
+                android:id="@+id/txtTitreClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Titre"
+                android:fontFamily="@font/dm_sans_medium" />
+
+            <TextView
+                android:id="@+id/txtSocieteClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Société"
+                android:fontFamily="@font/dm_sans_medium" />
+
+            <TextView
+                android:id="@+id/txtEmailClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:fontFamily="@font/dm_sans_medium" />
+
+            <TextView
+                android:id="@+id/txtTelClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Téléphone"
+                android:fontFamily="@font/dm_sans_medium" />
+
+            <Button
+                android:id="@+id/btnEnvoyerEmailClient"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:text="Envoyer Rapport"
+                android:textColor="@color/white"
+                android:drawableLeft="@android:drawable/ic_dialog_email"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/dm_sans_medium" />
+        </LinearLayout>
+
+        <!-- Adresse Section -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:layout_margin="5dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/txtAdresseHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:gravity="center_horizontal"
+                android:text="Adresse"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:padding="5dp"
+                android:fontFamily="@font/dm_sans_medium" />
+
+            <TextView
+                android:id="@+id/TxtAdressClient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adresse"
+                android:fontFamily="@font/dm_sans_medium" />
+
+            <Button
+                android:id="@+id/mapButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#2196F3"
+                android:text="Voir Carte"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/dm_sans_medium" />
+            <Button
+                android:id="@+id/historyButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#540101"
+                android:text="Voir Historique"
+                android:layout_marginTop="10dp"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="@font/dm_sans_medium" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

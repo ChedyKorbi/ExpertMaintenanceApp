@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EEEEF6"
+    android:orientation="vertical"
+    android:padding="20dp"
+    android:gravity="center"
+    android:weightSum="1">
+
+    <!-- Logo ImageView -->
+    <ImageView
+        android:id="@+id/logoImage"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-100dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/logo" />
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/dm_sans_medium"
+        android:text="LOGIN TO YOUR ACCOUNT"
+        android:textColor="@color/colorPrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <!-- Container for Login UI elements -->
+    <LinearLayout
+        android:id="@+id/containerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_marginTop="-5dp"
+        android:elevation="4dp">
+
+        <!-- Login EditText -->
+        <EditText
+            android:id="@+id/txtLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:fontFamily="@font/dm_sans_medium"
+            android:hint="Login"
+            android:inputType="textPersonName"
+            android:textColorHint="#A9A7A7"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:layout_marginBottom="15dp" />
+
+        <!-- Password EditText -->
+        <EditText
+            android:id="@+id/txtPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_bg"
+            android:ems="10"
+            android:fontFamily="@font/dm_sans_medium"
+            android:hint="Mot de Passe"
+            android:padding="15dp"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:textColorHint="#A9A7A7"
+            android:layout_marginBottom="20dp" />
+
+        <!-- Login Button -->
+        <Button
+            android:id="@+id/btnConnection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:text="SE CONNECTER"
+            android:fontFamily="@font/dm_sans_medium"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_gravity="center" />
+    </LinearLayout>
+
+    <!-- Sign Up TextView -->
+    <TextView
+        android:id="@+id/signUpText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don’t have an account? "
+        android:textSize="18sp"
+        android:textColor="#3498DB"
+        android:fontFamily="@font/dm_sans_medium"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        />
+    <TextView
+        android:id="@+id/signUPclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Signup"
+        android:textSize="18sp"
+        android:textColor="#3498DB"
+        android:fontFamily="@font/dm_sans_medium"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textStyle="bold"
+        android:onClick="onSignUpClick" />
+</LinearLayout>
